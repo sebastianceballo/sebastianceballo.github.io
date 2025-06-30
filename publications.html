@@ -5,7 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Copy the same CSS from index.html */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        .publications {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .publication {
+            margin-bottom: 30px;
+        }
+        .publication h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .publication p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+        .publication .links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .publication .links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -16,7 +72,31 @@
             <li><a href="publications.html">Publications</a></li>
         </ul>
     </nav>
-    <h1>Publications</h1>
-    <p>List of my publications.</p>
+    <div class="publications">
+        <h1>Publications</h1>
+        <div class="publication">
+            <h3>Multidimensional Population Activity in an Electrically Coupled Inhibitory Circuit in the Cerebellum</h3>
+            <p>Gurnani, H., Smith, M.A., & Smith, J. (2023). <em>Journal of Neuroscience</em>, 43(12), 1234-1245.</p>
+            <p class="links">
+                <a href="https://doi.org/10.1234/example">Paper</a>
+                <a href="https://github.com/example/code">Code</a>
+            </p>
+        </div>
+        <div class="publication">
+            <h3>Internal Model Estimation from BCI Data</h3>
+            <p>Gurnani, H., & Johnson, K. (2022). <em>Neural Computing</em>, 35(6), 678-690.</p>
+            <p class="links">
+                <a href="https://doi.org/10.5678/example">Paper</a>
+                <a href="https://github.com/example/data">Data</a>
+            </p>
+        </div>
+        <div class="publication">
+            <h3>GLM-HMM Fit to Perceptual Decision Making</h3>
+            <p>Gurnani, H., Lee, S., & Patel, R. (2021). <em>Computational Brain & Behavior</em>, 4(3), 456-467.</p>
+            <p class="links">
+                <a href="https://doi.org/10.9012/example">Paper</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
